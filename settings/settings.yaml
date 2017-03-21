@@ -1,0 +1,12 @@
+---
+Sensors:
+  temp1:
+    name: Tempurature
+    description: DHT-22 Temp sensor
+    interval: 1 minute
+    script: sensors/temp1
+  humidity1:
+    name: Humidity
+    description: DHT-22 Humidity sensor
+    interval: 1 minute
+    script: sensors/humidity1
