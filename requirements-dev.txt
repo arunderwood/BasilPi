@@ -3,3 +3,4 @@ cov-core
 coveralls
 python-crontab
 pyyaml
+pylint

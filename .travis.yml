@@ -20,6 +20,7 @@ install:
  # - platformio lib -g install 19
 
 script:
+  - pylint settings/ tests/
   - coverage run -m nose2.__main__ -v
 after_success:
   - coveralls
