@@ -4,19 +4,20 @@ python:
 
 # Cache PlatformIO packages using Travis CI container-based infrastructure
 sudo: false
-cache:
-    directories:
-        - "~/.platformio"
+#cache:
+#   directories:
+#        - "~/.platformio"
 
 install:
   - travis_retry pip install -r requirements-dev.txt
+  - travis_retry pip install -U RPi.GPIO
 
-  - travis_retry pip install -U platformio
+ # - travis_retry pip install -U platformio RPi.GPIO
     #
     # Libraries from PlatformIO Library Registry:
     #
     # http://platformio.org/lib/show/19/Adafruit-DHT
-  - platformio lib -g install 19
+ # - platformio lib -g install 19
 
 script:
   - coverage run -m nose2.__main__ -v
