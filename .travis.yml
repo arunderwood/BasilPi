@@ -18,8 +18,6 @@ install:
     # http://platformio.org/lib/show/19/Adafruit-DHT
   - platformio lib -g install 19
 
-  - tree
-
 script:
   - coverage run -m nose2.__main__ -v
 after_success:
