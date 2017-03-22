@@ -1,3 +1,5 @@
 nose2
 cov-core
 coveralls
+python-crontab
+pyyaml
