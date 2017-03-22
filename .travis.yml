@@ -7,9 +7,7 @@ sudo: false
 cache:
     directories:
         - "~/.platformio"
-before_install:
-  - sudo apt-get update
-  - sudo apt-get install build-essential python-pip python-dev python-smbus git
+
 install:
   - travis_retry pip install -r requirements-dev.txt
 
@@ -30,3 +28,10 @@ after_success:
 addons:
     code_climate:
         repo_token: 80742566fc527b8f5a6f906a07b65ed9cd221de12fc4e3cd447275196f448ef6
+    apt:
+    packages:
+    - build-essential
+    - python-pip
+    - python-dev
+    - python-smbus
+    - git
