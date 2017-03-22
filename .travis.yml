@@ -6,3 +6,6 @@ script:
   - coverage run -m nose2.__main__ -v
 after_success:
   - coveralls
+addons:
+    code_climate:
+        repo_token: 80742566fc527b8f5a6f906a07b65ed9cd221de12fc4e3cd447275196f448ef6
