@@ -8,9 +8,18 @@ cache:
     directories:
         - "~/.platformio"
 install:
-  - travis_retry pip install -U platformio
   - travis_retry pip install -r requirements-dev.txt
+
+git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
+sudo python Adafruit_Python_GPIO/setup.py install
+
+  - travis_retry pip install -U platformio
+    #
+    # Libraries from PlatformIO Library Registry:
+    #
+    # http://platformio.org/lib/show/19/Adafruit-DHT
   - platformio lib -g install 19
+
 script:
   - coverage run -m nose2.__main__ -v
 after_success:
