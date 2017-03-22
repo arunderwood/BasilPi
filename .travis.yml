@@ -11,15 +11,18 @@ cache:
 install:
   - travis_retry pip install -r requirements-dev.txt
 
-  - git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
-  - python Adafruit_Python_GPIO/setup.py install --user --install-dir ..
 
-  - travis_retry pip install -U platformio
+
+  - travis_retry pip install -U platformio adafruit-pureio spidev
     #
     # Libraries from PlatformIO Library Registry:
     #
     # http://platformio.org/lib/show/19/Adafruit-DHT
   - platformio lib -g install 19
+
+  - git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
+  - python Adafruit_Python_GPIO/ez_setup.py install --user --install-dir ..
+
   - tree
 
 script:
