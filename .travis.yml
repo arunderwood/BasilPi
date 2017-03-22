@@ -11,7 +11,7 @@ install:
   - travis_retry pip install -r requirements-dev.txt
 
   - git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
-  - sudo python Adafruit_Python_GPIO/setup.py install
+  - python Adafruit_Python_GPIO/setup.py install
 
   - travis_retry pip install -U platformio
     #
