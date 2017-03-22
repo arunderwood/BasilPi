@@ -9,7 +9,6 @@ cache:
         - "~/.platformio"
 install:
   - travis_retry pip install -U platformio
-  - travis_retry pip install -r requirements.txt
   - travis_retry pip install -r requirements-dev.txt
   - platformio lib -g install 19
 script:
