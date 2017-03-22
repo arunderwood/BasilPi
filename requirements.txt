@@ -1,3 +1,4 @@
 python-crontab
 pyyaml
 adafruit_python_dht
+adafruit-gpio

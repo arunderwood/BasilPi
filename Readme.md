@@ -5,14 +5,7 @@
 
 Automated system for growing basil indoors.  Powered with Python and Raspberry Pi.
 
-## Instaling dependancies
+## Important Libraries
 
-```
-make init
-```
-
-## Running tests
-
-```
-make test
-```
+- [Adafruit_Python_DHT](https://github.com/adafruit/Adafruit_Python_DHT)
+- [Adafruit_Python_GPIO](https://github.com/adafruit/Adafruit_Python_GPIO)

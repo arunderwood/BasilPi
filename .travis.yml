@@ -11,9 +11,7 @@ cache:
 install:
   - travis_retry pip install -r requirements-dev.txt
 
-
-
-  - travis_retry pip install -U platformio adafruit-gpio
+  - travis_retry pip install -U platformio
     #
     # Libraries from PlatformIO Library Registry:
     #
