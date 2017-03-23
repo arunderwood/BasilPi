@@ -1,7 +1,6 @@
 from unittest import TestCase
 import os
 import tempfile
-from context_settings import tests_directory, test_files
 from os.path import dirname
 from settings import settings
 
