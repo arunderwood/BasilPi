@@ -1,4 +1,4 @@
-.PHONY: init-dev test
+.PHONY: init-dev test lint
 
 init:
 	sudo apt-get update
@@ -6,13 +6,13 @@ init:
 	pip install -r requirements.txt
 
 init-dev:
-	pip install -r requirements.txt
 	pip install -r requirements-dev.txt
 
 test:
-	nose2 -C --coverage settings
+	nose2 -C --coverage settings --coverage outputs
 
 test-cov:
-	nose2 -C --coverage settings --coverage-report html
+	nose2 -C --coverage settings --coverage settings --coverage outputs --coverage-report html
 
-
+lint:
+	pylint settings/ outputs/ tests/

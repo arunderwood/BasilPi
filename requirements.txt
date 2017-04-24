@@ -1,4 +1,4 @@
 python-crontab
 pyyaml
 adafruit_python_dht
-RPi.GPIO
+gpiozero
