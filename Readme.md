@@ -40,7 +40,7 @@ _Actions to be taken based on inputs or schedule_
       - Automate the process of water the planter.  There will a bucket of similar container to hold water in reserve.  When triggered, the pump pulls water from the reservoir and mist it on the plants.  The fan should be disabled while the pump is on to prevent spraying water out of the enclosure.
 
 ## Future
-Random stuff that may or may not make it in in the future
+_Random stuff that may or may not make it in in the future_
 
 * The ability to read all configuration from a YAML file
 * Cloud integration
