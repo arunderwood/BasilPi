@@ -12,6 +12,7 @@ Automated system for growing basil indoors.  Powered with Python and Raspberry P
 - [Goals](#goals)
   - [Inputs](#inputs)
   - [Outputs](#outputs)
+- [Future](#future)
 - [Testing](#testing)
 - [Dependencies](#dependencies)
   - [Raspbian](#raspbian)
@@ -37,6 +38,13 @@ _Actions to be taken based on inputs or schedule_
       - Plants need light.  'Nuff said.
   * __FUTURE__ Water pump to add water to the planter, triggered by low soil moisture
       - Automate the process of water the planter.  There will a bucket of similar container to hold water in reserve.  When triggered, the pump pulls water from the reservoir and mist it on the plants.  The fan should be disabled while the pump is on to prevent spraying water out of the enclosure.
+
+## Future
+Random stuff that may or may not make it in in the future
+
+* The ability to read all configuration from a YAML file
+* Cloud integration
+    - Data is synchronized to AWS for altering, monitoring, and reporting
 
 ## Testing
 
