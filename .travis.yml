@@ -12,8 +12,8 @@ script:
   - make lint
   - make test
 
-after_sucess:
-  - CODECLIMATE_REPO_TOKEN=80742566fc527b8f5a6f906a07b65ed9cd221de12fc4e3cd447275196f448ef6 codeclimate-test-reporter
+after_success:
+  - codeclimate-test-reporter
 
 addons:
     code_climate:
