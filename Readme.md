@@ -14,27 +14,29 @@ Automated system for growing basil indoors.  Powered with Python and Raspberry P
   - [Outputs](#outputs)
 - [Testing](#testing)
 - [Dependencies](#dependencies)
+  - [Raspbian](#raspbian)
+  - [Python](#python)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Goals
 
-This project aims to automate the task of growing plants indoors.  If a reoccouring task can be automated, it should be.  If it cannot be automated, an alert should be fired to tell a human to perform the task.
+This project aims to automate the task of growing plants indoors.  If a reoccurring task can be automated, it should be.  If it cannot be automated, an alert should be fired to tell a human to perform the task.
 
 ### Inputs
 _Information to be collected_
-  * Tempurature of the enclosure
+  * Temperature of the enclosure
   * Humidity of the enclosure
   * Soil moisture of the planter
 
 ### Outputs
 _Actions to be taken based on inputs or schedule_
-  * Toggle fan based on humidity and tempurature
-      - Use a small fan to push air out of the enclosure to control humidity and tempurature.  Controlled amounts of air turbulence are also required to encourage stronger plant stem growth.  Without air movement, the plant will eventually collapse under its own weight.
+  * Toggle fan based on humidity and temperature
+      - Use a small fan to push air out of the enclosure to control humidity and temperature.  Controlled amounts of air turbulence are also required to encourage stronger plant stem growth.  Without air movement, the plant will eventually collapse under its own weight.
   * Toggle lights on and off based on schedule
       - Plants need light.  'Nuff said.
   * __FUTURE__ Water pump to add water to the planter, triggered by low soil moisture
-      - Automate the process of water the planter.  There will a bucket of similar container to hold water in reserve.  When triggered, the pump pulls water from the resivour and mist it on the plants.  The fan should be disabled while the pump is on to prevent spraying water out of the enclosure.
+      - Automate the process of water the planter.  There will a bucket of similar container to hold water in reserve.  When triggered, the pump pulls water from the reservoir and mist it on the plants.  The fan should be disabled while the pump is on to prevent spraying water out of the enclosure.
 
 ## Testing
 
@@ -51,4 +53,11 @@ else:
 
 ## Dependencies
 
+### Raspbian
+
+- Python 3.6 (Python 2.7 will be supported until it becomes inconvenient)
+
+### Python
+
 - [Adafruit_Python_DHT](https://github.com/adafruit/Adafruit_Python_DHT)
+- [gpiozero](https://github.com/RPi-Distro/python-gpiozero)
