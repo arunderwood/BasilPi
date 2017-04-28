@@ -64,6 +64,7 @@ else:
 ### Raspbian
 
 - Python 3.6 (Python 2.7 will be supported until it becomes inconvenient)
+- `sudo adduser [USERNAME] gpio`
 
 ### Python
 

@@ -9,10 +9,10 @@ init-dev:
 	pip install -r requirements-dev.txt
 
 test:
-	nose2 -C --coverage settings --coverage outputs
+	nose2 -C
 
 test-cov:
-	nose2 -C --coverage settings --coverage settings --coverage outputs --coverage-report html
+	nose2 -C --coverage-report html
 
 lint:
-	pylint settings/ outputs/ tests/
+	pylint settings/ outputs/ sensors/ tests/

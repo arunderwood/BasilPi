@@ -1,2 +1,10 @@
 [run]
-source = settings outputs
+omit =
+    .venv*/*
+    tests/*
+    *__init__.py
+[report]
+# keywords to use in inline comments to skip coverage
+exclude_lines =
+    pylint
+    pragma: no cover

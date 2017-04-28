@@ -1,8 +1,6 @@
 nose2
+nose2-cov
 unittest2
-cov-core
-coveralls
 python-crontab
 pyyaml
 pylint
-gpiozero

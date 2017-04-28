@@ -6,7 +6,7 @@ from platform import processor
 if processor() == 'x86_64' or 'i386':
     from lib.gpio_stub import LED
 else:
-    from gpiozero import LED  # pragma: no cover
+    from gpiozero import LED  # pylint: disable=import-error
 
 
 class Lamp(object):
