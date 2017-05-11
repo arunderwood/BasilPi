@@ -34,3 +34,7 @@ class Lamp(object):
     def status(self):
         """Return the state of the lamp"""
         return self.pin.is_lit
+
+    def close(self):
+        """Free up the pin used by the lamp"""
+        self.pin.close()

@@ -7,6 +7,7 @@ class LED(object):
         self.pin = pin
         self.value = initial_value
         self.active_high = active_high
+        self.closed = False
 
     # "Turn on" the LED by recording a True value
     def on(self):
@@ -20,3 +21,17 @@ class LED(object):
     @property
     def is_lit(self):
         return self.value
+
+    def close(self):
+        self.closed = True
+
+
+class DigitalInputDevice(object):
+
+    def __init__(self, pin, pull_up):
+        self.pin = pin
+        self.pull_up = pull_up
+        self.closed = False
+
+    def close(self):
+        self.closed = True

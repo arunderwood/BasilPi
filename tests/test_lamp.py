@@ -13,6 +13,7 @@ class TestLamp(TestCase):
 
     def tearDown(self):
         """Tear down test_lamp fixture"""
+        self.test_lamp.close()
         del self.test_lamp
 
     def test_lamp_on(self):
@@ -31,3 +32,9 @@ class TestLamp(TestCase):
         """Return the state of the lamp"""
 
         self.assertEqual(self.test_lamp.status(), False)
+
+    def test_close(self):
+        """Test closing lamp device"""
+        self.test_lamp.close()
+
+        self.assertTrue(getattr(self.test_lamp.pin, 'closed'))
