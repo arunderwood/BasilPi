@@ -1,4 +1,4 @@
-"""Test methods related to reading tempurature and humidity."""
+"""Test methods related to reading temperature and humidity."""
 
 from unittest2 import TestCase
 from sensors import dht22
