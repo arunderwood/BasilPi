@@ -43,7 +43,12 @@ _Actions to be taken based on inputs or schedule_
 _Random stuff that may or may not make it in in the future_
 
 * The ability to read all configuration from a YAML file
-* Implement [scheduler](https://docs.python.org/3/library/sched.html) that can run various actions such as poll sensors and trigger functions.
+* Main loop
+    * Implement [scheduler](https://docs.python.org/3/library/sched.html) that can run various actions such as poll sensors and trigger functions.
+    * [Argument acceptance](https://pypi.python.org/pypi/begins)
+* Publish as a package (investigate [Flit](https://flit.readthedocs.io/en/latest/flit_ini.html).
+* [Colored logging](https://coloredlogs.readthedocs.io/en/latest/)
+*
 * Cloud integration
     - Data is synchronized to AWS for altering, monitoring, and reporting
 
