@@ -38,6 +38,7 @@ _Actions to be taken based on inputs or schedule_
       - Plants need light.  'Nuff said.
   * __FUTURE__ Water pump to add water to the planter, triggered by low soil moisture
       - Automate the process of water the planter.  There will a bucket of similar container to hold water in reserve.  When triggered, the pump pulls water from the reservoir and mist it on the plants.  The fan should be disabled while the pump is on to prevent spraying water out of the enclosure.
+      - Implement [scheduler](https://docs.python.org/3/library/sched.html) that can run various actions such as poll sensors and trigger functions.
 
 ## Future
 _Random stuff that may or may not make it in in the future_
