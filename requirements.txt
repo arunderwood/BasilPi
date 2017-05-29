@@ -1,4 +1,5 @@
 python-crontab
 pyyaml
-adafruit_python_dht
+# adafruit_python_dht deprecating
 gpiozero
+smbus2

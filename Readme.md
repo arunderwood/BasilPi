@@ -48,7 +48,6 @@ _Random stuff that may or may not make it in in the future_
     * [Argument acceptance](https://pypi.python.org/pypi/begins)
 * Publish as a package (investigate [Flit](https://flit.readthedocs.io/en/latest/flit_ini.html).
 * [Colored logging](https://coloredlogs.readthedocs.io/en/latest/)
-*
 * Cloud integration
     - Data is synchronized to AWS for altering, monitoring, and reporting
 
@@ -62,7 +61,7 @@ from platform import processor
 if processor() == 'x86_64' or 'i386':
     from lib.gpio_stub import LED
 else:
-    from gpiozero import LED
+    from gpiozero import LED  # pylint: disable=import-error
 ```
 
 ## Dependencies
@@ -71,6 +70,7 @@ else:
 
 - Python 3.6 (Python 2.7 will be supported until it becomes inconvenient)
 - `sudo adduser [USERNAME] gpio`
+- `sudo adduser [USERNAME] i2c`
 
 ### Python
 
